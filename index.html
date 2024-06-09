@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Timer</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <p>
+            <p class="label">Enter Time:</p>
+
+            <p>
+            <input type="number" class="input-area input-hours" placeholder="Hours"> 
+            <input type="number" class="input-area input-minutes" placeholder="Minutes">
+            <input type="number" class="input-area input-seconds" placeholder="Seconds">
+            </p>
+
+            <p>
+            <button class="add-button" onclick="
+                addTime();
+            ">ADD</button>
+
+            <button class=" js-pause-button pause-button" onclick="
+                pauseTime();
+            ">START</button>
+
+            <button class="reset-button" onclick="
+                resetTime();
+            ">RESET</button>
+            </p>
+        </p>
+        
+        <p class="js-message"></p>
+        <p class="display-time js-display-time"></p>
+    </div>
+
+    <p></p>
+    <script src="index.js"></script>
+</body>
+</html>
